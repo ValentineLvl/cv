@@ -9,7 +9,7 @@ function User() {
 
     return (
         <div className='user'>
-            <a className='pdf' href='../files/'><FontAwesomeIcon icon={faFilePdf} size='lg' /></a>
+            <a className='pdf' href='../files/CV-Valentine-LAVALY.pdf' target='blank'><FontAwesomeIcon icon={faFilePdf} size='lg' /></a>
             <img className='avatar' src='../images/photo-cv.png' alt='Avatar' />
             <h1>Valentine Lavaly</h1>    
             <h2 className='profession'>Développeuse Front-End React</h2>

@@ -1,3 +1,7 @@
+.project-name {
+    margin-top: var(--spacing-4);
+}
+
 .github {
     display: flex;
     justify-content: space-between;
@@ -59,4 +63,14 @@
     font-size: var(--h3-font-size);
     font-weight: 700;
     margin-top: var(--spacing-2);
+}
+
+.go-up {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-arrow-up {
+    color: var(--text-color);
+    margin-right: var(--spacing-2);
 }

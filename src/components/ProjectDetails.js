@@ -3,13 +3,15 @@ import { connect } from "react-redux";
 import ReactPlayer from 'react-player'
 import './Project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobileAlt, faLaptop, faImage, faCode} from '@fortawesome/free-solid-svg-icons';
+import { faMobileAlt, faLaptop, faImage, faCode, faArrowAltCircleLeft, faArrowAltCircleUp} from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faGithub, faJsSquare, faReact, faCss3Alt, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 function ProjectDetails(props) {
     return (
         <div>
-           <h2>{props.selectedProject.type === "application mobile" ? (<FontAwesomeIcon className='icon' icon={faMobileAlt} />) : (<FontAwesomeIcon className='icon' icon={faLaptop} />)}{props.selectedProject.name}</h2>
+            <Link to='/portfolio' exact ><FontAwesomeIcon className='icon' icon={faArrowAltCircleLeft} />Retour au Portfolio</Link>
+           <h2 className='project-name'>{props.selectedProject.type === "application mobile" ? (<FontAwesomeIcon className='icon' icon={faMobileAlt} />) : (<FontAwesomeIcon className='icon' icon={faLaptop} />)}{props.selectedProject.name}</h2>
             <div>
                 <div className='github'>
                 <h3>Cadre : {props.selectedProject.cadre}</h3>
@@ -48,7 +50,7 @@ function ProjectDetails(props) {
            )})}
             </div>
             </div>
-               
+          <a href='#' className='go-up'><FontAwesomeIcon className='icon-arrow-up' icon={faArrowAltCircleUp} size='4x' /></a>     
         </div>
      
     )

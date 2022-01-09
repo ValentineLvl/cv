@@ -1,7 +1,6 @@
 {
   "name": "cv-react",
   "version": "0.1.0",
-  "homepage": "https://cv-valentinelavaly.go.yj.fr/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
