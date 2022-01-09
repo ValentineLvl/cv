@@ -1,0 +1,62 @@
+.github {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.devTime {
+    color: var(--subtitle-color);
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: var(--spacing-1);
+}
+
+.descProject {
+    text-align: justify;
+    margin-top: var(--spacing-3);
+}
+
+.library {
+    display: flex;
+}
+
+.p-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacing-2);
+}
+
+.youtube {
+    margin-top: var(--spacing-5);
+    margin-bottom: var(--spacing-2);
+}
+
+.player {
+    position: relative;
+    margin-bottom: 25rem;
+}
+
+.grid-galery {
+    margin-top: var(--spacing-3);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+    gap: var(--spacing-5);
+    justify-content: center;
+}
+
+.galery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-img {
+    width: 20rem;
+}
+
+.img-title {
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    margin-top: var(--spacing-2);
+}

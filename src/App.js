@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import { createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+
+import selectedProject from './reducers/selectedProject';
+
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import ProjectDetails from './pages/Project';
+import NotFound from './pages/NotFound';
+
+const store = createStore(combineReducers({selectedProject}))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+    <Router>
+      <Switch>
+        <Route component={Home} path="/" exact />
+        <Route component={Portfolio} path="/portfolio" exact />
+        <Route component={ProjectDetails} path="/projet" exact />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
+    </Provider>
   );
 }
 

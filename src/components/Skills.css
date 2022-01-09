@@ -1,0 +1,38 @@
+.skills {
+    margin:var(--spacing-3) 0;
+  }
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+  }
+
+.skill-label {
+    margin-left: var(--spacing-2);
+}
+
+  .titre {
+    text-align: left;
+    margin-bottom: var(--spacing-2);
+    margin-top: var(--spacing-3);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.interests {
+  display: flex;
+  justify-content: space-around;
+  margin:var(--spacing-1) 0;
+
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interest-icon {
+  color: var(--icon-color);
+  
+}

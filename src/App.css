@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --body-background-color: #f2f2f2;
+  --sidebar-background-color: #e3bfba;
+  --text-color: #150941;
+  --title-color: #ff6088;
+  --subtitle-color: #ff80a0;
+  --entreprise-color: #f80040;
+
+  --icon-color: var(--title-color);
+  --circle-color: #a4a4a4;
+  --circle-color-plain: var(--title-color);
+  /* --circle-color-half: #ff80a0; */
+
+  --body-font: 'Roboto Condensed', sans-serif;
+  --body-font-size: 1rem;
+  --h1-font-size: 1.7rem;
+  --h2-font-size: 1.3rem;
+  --h3-font-size: 1.1rem;
+
+  --spacing-1: .4rem;
+  --spacing-2: .8rem;
+  --spacing-3: 1.2rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: var(--body-font-size);
+  color: var(--text-color);
+  background-color: var(--body-background-color)
+}
+
+h1 {
+  color: var(--title-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: var(--spacing-1);
+}
+
+h2 {
+  margin-bottom: var(--spacing-1);
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+h3 {
+  margin-bottom: var(--spacing-1);
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+p { 
+  margin-bottom: var(--spacing-2);
+}
+
+ul {
+  margin-left: var(--spacing-2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+li {
+  margin-bottom: var(--spacing-1);
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
+  .row {
+    margin-bottom: var(--spacing-3);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+
+.navigation {
+  background-color: #dcdde1;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #dcdde1 40px ), repeating-linear-gradient( #e3bfba55, #e3bfba );
+  padding: .7rem;
+  margin: var(--spacing-1);
+  position: relative;
+  border-radius: 2em;
+ 
+}
+
+.listNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+
+}
+
+li {
+  list-style: none;
+  }
+
+li:hover {
+  color: var(--title-color);
+  transform: translate(5px);
+}
+
+.itemNav {
+  font-size: var(--h2-font-size);
+
+}
+
+.navActive {
+  color: var(--title-color);
+}
+
+.sidebar {
+  background-color: var(--sidebar-background-color);
+  padding: 1.5rem;
+}
+
+.circle {
+  display: inline-block;
+  width:20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background:var(--circle-color);
+}
+.circle--plain {  
+  background:var(--circle-color-plain);
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 13rem;
+ margin-left: var(--spacing-4);
+ margin-right: var(--spacing-5);
+ margin-bottom: var(--spacing-2);
+}
+
+.notFound {
+  min-height: 60rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: radial-gradient(ellipse at 89% 56%,#f2f2f2, #e7dbda, rgba(227,191,186,1))
 }
 
-.App-link {
-  color: #61dafb;
+.icon-hand {
+  color: var(--entreprise-color);
+  margin-bottom: var(--spacing-5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-notFound {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--spacing-3);
+}
+
+button {
+  padding: var(--spacing-2);
+  color: var(--text-color);
+  font-size: var(--body-font-size);
+  border-radius: 5rem;
+  border-color: var(--sidebar-background-color);
+  background-color: inherit;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  border-color: var(--body-background-color);
+  color:var(--body-background-color);
+  box-shadow: 2px 2px 5px var(--circle-color);
 }
