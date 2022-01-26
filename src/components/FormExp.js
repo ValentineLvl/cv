@@ -26,7 +26,7 @@ const dataFormations = [
 
 const dataExperiences = [
     {name : 'Application mobile Tattoo Moi (projet de fin de formation)',
-    logo:'../images/logos/tattoo-moi_1.png',
+    logo:'https://res.cloudinary.com/dqulnrq1a/image/upload/v1643217388/tattoo-moi_1_l2dioi.png',
     date : '12/2021',
     company : 'Bootcamp La Capsule, Paris, France',
     missions : [
@@ -35,7 +35,7 @@ const dataExperiences = [
         {title: "mission 3", desc: "Création de la navigation"}]},
     
     {name : 'Responsable communication digitale (alternance)',
-    logo:'../images/logos/novotel-collegien.png',
+    logo:'https://res.cloudinary.com/dqulnrq1a/image/upload/v1643217388/novotel-collegien_wmd0gj.png',
     date : '10/2020 - 09/2021',
     company : 'Novotel MLV Collégien, Collégien (77), France',
     missions : [
@@ -43,7 +43,7 @@ const dataExperiences = [
         {title: "mission 2", desc: "Modification et ajout de contenus et pages sur le site du restaurant (via Wix)"}]},
     
     {name : 'Assistante Web Marketing (alternance)',
-    logo:'../images/logos/Groupe-Hema-logo.png',
+    logo:'https://res.cloudinary.com/dqulnrq1a/image/upload/v1643217388/Groupe-Hema-logo_fttegl.png',
     date : '10/2019 - 09/2020',
     company : 'Groupe HEMA, Lognes (77), France',
     missions : [

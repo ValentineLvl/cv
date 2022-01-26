@@ -10,7 +10,7 @@ function User() {
     return (
         <div className='user'>
             <a className='pdf' href='../files/CV-Valentine-LAVALY.pdf' target='blank'><FontAwesomeIcon icon={faFilePdf} size='lg' /></a>
-            <img className='avatar' src='../images/photo-cv.png' alt='Avatar' />
+            <img className='avatar' src='https://res.cloudinary.com/dqulnrq1a/image/upload/v1643217476/photo-cv_boazyt.png' alt='Avatar' />
             <h1>Valentine Lavaly</h1>    
             <h2 className='profession'>Développeuse React / Node Junior</h2>
                 <p className='desc'>Créative et organisée : deux qualités qui prouvent que je suis celle qu'il vous faut ! Recherche CDD ou CDI en tant que Développeuse Front-End.</p>
