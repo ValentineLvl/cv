@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileAlt, faLaptop} from '@fortawesome/free-solid-svg-icons';
-import { faJsSquare, faReact, faCss3Alt, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faJsSquare, faReact, faCss3Alt, faNodeJs, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 
 function Projects(props) {
@@ -46,6 +46,23 @@ const projectList = [
     // previewImg : "../images/ticketac/overview-ticketac.png",
     // imgList : [
     // ""]}
+    {type: 'application web',
+    name : 'Guide ACNH',
+    date : '4 jours',
+    cadre : 'Partiel HTML / CSS - Mastère MS Web Marketing et Stratégie digitale',
+    desc : "Site inspiré de nombreux guides concernant l'aventire Animal Crossing sur Nintendo Switch. Ce projet a été réalisé afin de valider la matière HTML/CSS lors de ma formation à ISEAM. Les compétences principales attendues pour ce projet étaient les menus déroulants, les animations et les transitions CSS. Vous pouvez consulter le rendu dans la video ci-dessous.",
+    youtube: "https://youtu.be/5MdydY1ATMM",
+    github: "https://github.com/ValentineLvl/animalcrossing.git",
+    technology : [
+        'HTML', 'CSS'
+        ],
+    previewImg : "https://res.cloudinary.com/dqulnrq1a/image/upload/v1644407640/accueil_l8ahxy.png",
+    imgList : [
+    {screen: "Ecran d'accueil", url: "https://res.cloudinary.com/dqulnrq1a/image/upload/v1644407441/accueil_x2xp17.png"},
+    {screen: 'Menu déroulant', url: "https://res.cloudinary.com/dqulnrq1a/image/upload/v1644407441/menu_deroulant_qwtlgc.png"},
+    {screen: 'Animation de titre', url: "https://res.cloudinary.com/dqulnrq1a/image/upload/v1644407441/titre_page_clmi3b.png"},
+    {screen: 'Animation image', url: "https://res.cloudinary.com/dqulnrq1a/image/upload/v1644407441/transition_image_bcgqwr.png"}
+    ]},
 ]
 
     return (
@@ -63,6 +80,8 @@ const projectList = [
                         return (<FontAwesomeIcon className='languages' icon={faReact} size='2x' />)
                     } else if (icon === 'Node.js') {
                         return (<FontAwesomeIcon className='languages' icon={faNodeJs} size='2x' />)
+                    } else if (icon === 'HTML') {
+                        return (<FontAwesomeIcon className='languages' icon={faHtml5} size='2x' />)
                     } else if (icon === 'CSS') {
                         return (<FontAwesomeIcon className='languages' icon={faCss3Alt} size='2x' />)
                     } 

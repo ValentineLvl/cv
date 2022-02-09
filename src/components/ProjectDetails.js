@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 import './Project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileAlt, faLaptop, faImage, faCode, faArrowAltCircleLeft, faArrowAltCircleUp} from '@fortawesome/free-solid-svg-icons';
-import { faYoutube, faGithub, faJsSquare, faReact, faCss3Alt, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faGithub, faJsSquare, faReact, faCss3Alt, faNodeJs, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 function ProjectDetails(props) {
@@ -30,6 +30,8 @@ function ProjectDetails(props) {
                     return (<p className='p-icon'><FontAwesomeIcon className='languages' icon={faReact} size='3x' />{icon}</p>)
                 } else if (icon === 'Node.js') {
                     return (<p className='p-icon'><FontAwesomeIcon className='languages' icon={faNodeJs} size='3x' />{icon}</p>)
+                } else if (icon === 'HTML') {
+                    return (<p className='p-icon'><FontAwesomeIcon className='languages' icon={faHtml5} size='3x' />{icon}</p>)
                 } else if (icon === 'CSS') {
                     return (<p className='p-icon'><FontAwesomeIcon className='languages' icon={faCss3Alt} size='3x' />{icon}</p>)
                 } 
