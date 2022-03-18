@@ -6,7 +6,7 @@ import { faBriefcase, faGraduationCap, faLaptop} from '@fortawesome/free-solid-s
 function FormExp() {
 
 const dataFormations = [
-    {name : 'Titre professionnel de Chef de projet web et mobile',
+    {name : 'Titre professionnel de Chef de projet en développement web et mobile',
     date : '10/2021 - 12/2021',
     school : 'Bootcamp La Capsule, Paris, France',
     title : "Titre certifié par l'Etat Niveau 6 au RNCP"},
